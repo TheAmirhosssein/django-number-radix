@@ -23,6 +23,12 @@ def number_to_alphabet(number):
         return "J"
 
 
+def convert_to_list(string):
+    list1 = []
+    list1[:0] = string
+    return list1
+
+
 def encrypt(number, radix):
     changed_number = []
     while number > (mod := 0):
