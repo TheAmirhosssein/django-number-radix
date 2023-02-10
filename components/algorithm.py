@@ -37,3 +37,12 @@ def encrypt(number, radix):
         number = number // radix
         changed_number.append(mod)
     return changed_number.reverse()
+
+
+number = convert_to_list(input(" : "))
+radix = int(input(" : "))
+number_sum, start = 0, 0
+for i in number:
+    number_sum += int(i) * radix**start
+    start += 1
+print(number_sum)
