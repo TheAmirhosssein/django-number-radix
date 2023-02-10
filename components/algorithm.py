@@ -1,3 +1,8 @@
+def Reverse(lst):
+    new_lst = lst[::-1]
+    return new_lst
+
+
 def number_to_alphabet(number):
     if number < 10:
         return number
@@ -42,7 +47,8 @@ def encrypt(number, radix):
 number = convert_to_list(input(" : "))
 radix = int(input(" : "))
 number_sum, start = 0, 0
-for i in number:
+for i in Reverse(number):
     number_sum += int(i) * radix**start
+    print(int(i) * radix**start)
     start += 1
 print(number_sum)
