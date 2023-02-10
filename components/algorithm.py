@@ -28,6 +28,31 @@ def number_to_alphabet(number):
         return "J"
 
 
+def alphabet_to_number(number):
+    if number == "A":
+        return 10
+    elif number == "B":
+        return 11
+    elif number == "C":
+        return 12
+    elif number == "D":
+        return 13
+    elif number == "E":
+        return 14
+    elif number == "F":
+        return 15
+    elif number == "G":
+        return 16
+    elif number == "H":
+        return 17
+    elif number == "I":
+        return 18
+    elif number == "J":
+        return 19
+    else:
+        return number
+
+
 def convert_to_list(string):
     list1 = []
     list1[:0] = string
@@ -48,6 +73,7 @@ number = convert_to_list(input(" : "))
 radix = int(input(" : "))
 number_sum, start = 0, 0
 for i in Reverse(number):
+    i = alphabet_to_number(i)
     number_sum += int(i) * radix**start
     print(int(i) * radix**start)
     start += 1
