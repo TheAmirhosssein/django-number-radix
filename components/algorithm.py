@@ -1,4 +1,4 @@
-def Reverse(lst):
+def list_reverse(lst):
     new_lst = lst[::-1]
     return new_lst
 
@@ -72,7 +72,7 @@ def encrypt(number, radix):
 number = convert_to_list(input(" : "))
 radix = int(input(" : "))
 number_sum, start = 0, 0
-for i in Reverse(number):
+for i in list_reverse(number):
     i = alphabet_to_number(i)
     number_sum += int(i) * radix**start
     print(int(i) * radix**start)
