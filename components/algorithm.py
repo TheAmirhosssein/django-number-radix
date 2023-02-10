@@ -69,12 +69,10 @@ def encrypt(number, radix):
     return changed_number.reverse()
 
 
-number = convert_to_list(input(" : "))
-radix = int(input(" : "))
-number_sum, start = 0, 0
-for i in list_reverse(number):
-    i = alphabet_to_number(i)
-    number_sum += int(i) * radix**start
-    print(int(i) * radix**start)
-    start += 1
-print(number_sum)
+def decrypt(number, radix):
+    number_sum, start = 0, 0
+    for i in list_reverse(number):
+        i = alphabet_to_number(i)
+        number_sum += int(i) * radix**start
+        start += 1
+    return number_sum
