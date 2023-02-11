@@ -1,6 +1,25 @@
 {% extends 'base.html' %}
 {% block title %}decrypt{% endblock title %}
 {% block content %}
-
-
+<div class="container">
+    <div class="row">
+        <form class="card offset-sm-3 col-sm-6 mt-5">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Your number</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="enter your number">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Your result:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nothing yet..."
+                        disabled>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-outline-primary" type="button">sumbit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 {% endblock content %}
