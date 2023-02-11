@@ -4,3 +4,7 @@ from django.views.generic import TemplateView
 
 class HomePage(TemplateView):
     template_name = "main/home.html"
+
+
+class Decrypt(TemplateView):
+    template_name = "main/decrypt.html"
