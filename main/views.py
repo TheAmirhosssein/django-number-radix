@@ -6,5 +6,5 @@ class HomePage(TemplateView):
     template_name = "main/home.html"
 
 
-class Decrypt(TemplateView):
+class DecryptView(TemplateView):
     template_name = "main/decrypt.html"
