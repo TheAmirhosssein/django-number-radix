@@ -2,16 +2,16 @@
 {% block title %}djnago number radix{% endblock title %}
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="card offset-sm-3 col-sm-6 mt-5">
-            <div class="card-header">
-                Hello There!
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Wellcome to djnago number radix!</h5>
-                <p class="card-text">Chose your option.</p>
-                <a href="#" class="btn btn-primary col-md-5">encrypt</a>
-                <a href="#" class="btn btn-danger col-md-5">decrypt</a>
+    <div class="card offset-sm-3 col-sm-6 mt-5">
+        <div class="card-header">
+            Hello There!
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Wellcome to djnago number radix!</h5>
+            <p class="card-text">Chose your option.</p>
+            <div class="d-grid gap-2">
+                <a href="#" class="btn btn-outline-primary">encrypt</a>
+                <a href="{% url 'decrypt-page' %}" class="btn btn-outline-success">decrypt</a>
             </div>
         </div>
     </div>
