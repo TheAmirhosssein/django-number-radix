@@ -66,7 +66,8 @@ def encrypt(number, radix):
         mod = number_to_alphabet(mod)
         number = number // radix
         changed_number.append(mod)
-    return changed_number.reverse()
+    changed_number.reverse()
+    return "".join(map(str, changed_number))
 
 
 def decrypt(number, radix):
