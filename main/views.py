@@ -2,7 +2,7 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
-from components.algorithm import encrypt
+from components.algorithm import decrypt, encrypt
 
 
 class HomePageView(TemplateView):
@@ -25,6 +25,19 @@ def encrypt_operation(request: HttpRequest):
         final_number = "your radix must be lower than 21"
     return render(
         request,
-        template_name="main/includes/encrypt_result.html",
+        template_name="main/includes/result.html",
+        context={"result": final_number},
+    )
+
+
+def decrypt_operation(request: HttpRequest):
+    number = request.GET.get("number")
+    radix = int(request.GET.get("radix"))
+    final_number = decrypt(number, radix)
+    if radix > 20:
+        final_number = "your radix must be lower than 21"
+    return render(
+        request,
+        template_name="main/includes/result.html",
         context={"result": final_number},
     )
