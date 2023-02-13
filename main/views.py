@@ -8,3 +8,7 @@ class HomePageView(TemplateView):
 
 class DecryptView(TemplateView):
     template_name = "main/decrypt.html"
+
+
+class EncryptView(TemplateView):
+    template_name = "main/encrypt.html"
