@@ -13,7 +13,7 @@ for windows:
 c:\Python35\python -m venv c:\path\to\myenv
 python -m venv c:\path\to\myenv
 ```
-- then install packages whit this command
+- then install packages with this command
 
 ```
 pip3 install requirements.txt
