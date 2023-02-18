@@ -5,8 +5,8 @@
 
 - at first make venv and activate it
 ```
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 ```
 for windows:
 ```
