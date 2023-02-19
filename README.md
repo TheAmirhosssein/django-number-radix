@@ -13,10 +13,10 @@ for windows:
 c:\Python35\python -m venv c:\path\to\myenv
 python -m venv c:\path\to\myenv
 ```
-- then install packages with this command
+- then go to project directory and install packages with this command
 
 ```
-pip3 install requirements.txt
+pip install requirements.txt
 ```
 
 - run project with this command
