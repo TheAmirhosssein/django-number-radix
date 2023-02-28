@@ -20,3 +20,6 @@ function decrypt() {
         $('#resultArea').html(res);
     });
 }
+$(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
